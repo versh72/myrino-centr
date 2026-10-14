@@ -1,11 +1,11 @@
 name: Обновить статистику
 
 # GitHub отдаёт трафик Pages за последние 14 дней и обновляет его раз в сутки.
-# Поэтому счётчик обновляется раз в день — точнее GitHub не даёт.
+# Запускаем раз в неделю — чаще данных всё равно не будет.
 
 on:
   schedule:
-    - cron: '17 7 * * *'
+    - cron: '17 8 * * 1'   # по понедельникам
   workflow_dispatch:
 
 permissions:
@@ -17,24 +17,42 @@ jobs:
     steps:
       - name: Забрать трафик Pages
         id: traffic
+        env:
+          # Токен Actions не имеет доступа к API трафика — нужен свой.
+          # Положи PAT с правом repo в секрет STATS_TOKEN.
+          TOKEN: ${{ secrets.STATS_TOKEN }}
+          REPO: ${{ github.repository }}
         run: |
-          curl -sS -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+          if [ -z "$TOKEN" ]; then
+            echo "::notice::Секрет STATS_TOKEN не задан — статистика обновляется вручную"
+            echo "has_token=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          code=$(curl -sS -o views.json -w '%{http_code}' \
+               -H "Authorization: Bearer $TOKEN" \
                -H "Accept: application/vnd.github+json" \
                -H "X-GitHub-Api-Version: 2022-11-28" \
-               "https://api.github.com/repos/${{ github.repository }}/traffic/views" > views.json
-          echo "traffic=$(cat views.json)" >> "$GITHUB_OUTPUT"
-          wc -c views.json
+               "https://api.github.com/repos/$REPO/traffic/views")
+          echo "код ответа: $code"
+          if [ "$code" != "200" ]; then
+            echo "::notice::GitHub не отдал трафик (код $code), пропускаем"
+            cat views.json || true
+            echo "has_token=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          echo "has_token=true" >> "$GITHUB_OUTPUT"
+          head -c 120 views.json
 
       - name: Собрать stats.json
+        if: steps.traffic.outputs.has_token == 'true'
         run: |
           node -e '
             const fs = require("fs");
             const v = JSON.parse(fs.readFileSync("views.json", "utf8"));
-            const days = (v.views || []).length || 14;
             const out = {
               count: v.count || 0,
               uniques: v.uniques || 0,
-              periodDays: days,
+              periodDays: (v.views || []).length || 14,
               updated: new Date().toISOString().slice(0, 10),
               daily: (v.views || []).slice(-7).map(d => ({
                 date: d.timestamp.slice(5, 10),
@@ -43,11 +61,12 @@ jobs:
               }))
             };
             fs.writeFileSync("stats.json", JSON.stringify(out, null, 2) + "\n");
-            console.log("views=" + out.count + " uniques=" + out.uniques);
+            console.log("просмотров=" + out.count + " уникальных=" + out.uniques);
           '
           cat stats.json
 
       - name: Опубликовать
+        if: steps.traffic.outputs.has_token == 'true'
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -55,6 +74,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "изменений нет"
           else
-            git commit -m "статистика: ${views:-обновление}"
+            git commit -m "статистика: обновление"
             git push
           fi

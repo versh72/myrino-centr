@@ -3,5 +3,41 @@
   "uniques": 0,
   "periodDays": 14,
   "updated": "2026-10-14",
-  "daily": []
+  "daily": [
+    {
+      "date": "10-08",
+      "views": 0,
+      "uniques": 0
+    },
+    {
+      "date": "10-09",
+      "views": 0,
+      "uniques": 0
+    },
+    {
+      "date": "10-10",
+      "views": 0,
+      "uniques": 0
+    },
+    {
+      "date": "10-11",
+      "views": 0,
+      "uniques": 0
+    },
+    {
+      "date": "10-12",
+      "views": 0,
+      "uniques": 0
+    },
+    {
+      "date": "10-13",
+      "views": 0,
+      "uniques": 0
+    },
+    {
+      "date": "10-14",
+      "views": 0,
+      "uniques": 0
+    }
+  ]
 }
