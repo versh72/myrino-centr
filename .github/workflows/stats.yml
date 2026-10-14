@@ -1,0 +1,60 @@
+name: Обновить статистику
+
+# GitHub отдаёт трафик Pages за последние 14 дней и обновляет его раз в сутки.
+# Поэтому счётчик обновляется раз в день — точнее GitHub не даёт.
+
+on:
+  schedule:
+    - cron: '17 7 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  stats:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Забрать трафик Pages
+        id: traffic
+        run: |
+          curl -sS -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+               -H "Accept: application/vnd.github+json" \
+               -H "X-GitHub-Api-Version: 2022-11-28" \
+               "https://api.github.com/repos/${{ github.repository }}/traffic/views" > views.json
+          echo "traffic=$(cat views.json)" >> "$GITHUB_OUTPUT"
+          wc -c views.json
+
+      - name: Собрать stats.json
+        run: |
+          node -e '
+            const fs = require("fs");
+            const v = JSON.parse(fs.readFileSync("views.json", "utf8"));
+            const days = (v.views || []).length || 14;
+            const out = {
+              count: v.count || 0,
+              uniques: v.uniques || 0,
+              periodDays: days,
+              updated: new Date().toISOString().slice(0, 10),
+              daily: (v.views || []).slice(-7).map(d => ({
+                date: d.timestamp.slice(5, 10),
+                views: d.count,
+                uniques: d.uniques
+              }))
+            };
+            fs.writeFileSync("stats.json", JSON.stringify(out, null, 2) + "\n");
+            console.log("views=" + out.count + " uniques=" + out.uniques);
+          '
+          cat stats.json
+
+      - name: Опубликовать
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add stats.json
+          if git diff --cached --quiet; then
+            echo "изменений нет"
+          else
+            git commit -m "статистика: ${views:-обновление}"
+            git push
+          fi
