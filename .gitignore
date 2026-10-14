@@ -1,0 +1,12 @@
+﻿# исходник и инструменты НЕ публикуются: в репозитории только собранный сайт
+node_modules/
+package-lock.json
+index.src.html
+tools/
+mobiletest.html
+shot.html
+frametest.html
+probe.html
+edgeprof/
+*.log
+package.json

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 560" width="480" height="560" role="img" aria-label="Плаксик">
+  
+  <defs>
+    <linearGradient id="bgplaksik" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1d4459"/><stop offset="100%" stop-color="#102330"/>
+    </linearGradient>
+    <radialGradient id="glowplaksik" cx="50%" cy="38%" r="55%">
+      <stop offset="0%" stop-color="#7dd3fc" stop-opacity=".38"/>
+      <stop offset="100%" stop-color="#7dd3fc" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="skinplaksik" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#bae6fd"/><stop offset="100%" stop-color="#7dd3fc"/>
+    </linearGradient>
+    <filter id="grainplaksik">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3"/>
+      <feColorMatrix type="saturate" values="0"/>
+    </filter>
+  </defs>
+  
+  <rect width="480" height="560" fill="url(#bgplaksik)"/>
+  <rect width="480" height="560" fill="url(#glowplaksik)"/>
+  <g opacity=".10" stroke="#7dd3fc" stroke-width="1">
+    <line x1="0" y1="0" x2="480" y2="0"/><line x1="0" y1="55" x2="480" y2="55"/><line x1="0" y1="110" x2="480" y2="110"/><line x1="0" y1="165" x2="480" y2="165"/><line x1="0" y1="220" x2="480" y2="220"/><line x1="0" y1="275" x2="480" y2="275"/><line x1="0" y1="330" x2="480" y2="330"/><line x1="0" y1="385" x2="480" y2="385"/><line x1="0" y1="440" x2="480" y2="440"/><line x1="0" y1="495" x2="480" y2="495"/><line x1="0" y1="550" x2="480" y2="550"/>
+  </g>
+  <rect width="480" height="560" filter="url(#grainplaksik)" opacity=".14" style="mix-blend-mode:overlay"/>
+  <g transform="translate(0,6)">
+  <ellipse cx="240" cy="330" rx="118" ry="112" fill="#d8cfc4" stroke="#0b0b0b" stroke-width="6"/>
+  <ellipse cx="240" cy="262" rx="54" ry="48" fill="#e8ded2" stroke="#0b0b0b" stroke-width="5"/>
+  <ellipse cx="176" cy="212" rx="26" ry="30" fill="#c8bdae" stroke="#0b0b0b" stroke-width="5"/>
+  <ellipse cx="304" cy="212" rx="26" ry="30" fill="#c8bdae" stroke="#0b0b0b" stroke-width="5"/>
+  <ellipse cx="240" cy="322" rx="34" ry="30" fill="#8b7f72" stroke="#0b0b0b" stroke-width="4"/>
+  <ellipse cx="232" cy="318" rx="6" ry="8" fill="#2a2520"/>
+  <ellipse cx="250" cy="318" rx="6" ry="8" fill="#2a2520"/>
+  <ellipse cx="204" cy="252" rx="27" ry="29" fill="#0f0f0f"/>
+  <ellipse cx="278" cy="252" rx="27" ry="29" fill="#0f0f0f"/>
+  <circle cx="212" cy="242" r="9" fill="#fff" opacity=".92"/>
+  <circle cx="286" cy="242" r="9" fill="#fff" opacity=".92"/>
+  <circle cx="198" cy="262" r="5" fill="#fff" opacity=".6"/>
+  <circle cx="272" cy="262" r="5" fill="#fff" opacity=".6"/>
+  <path d="M240 344 q-10 22 0 30" fill="none" stroke="#3a332c" stroke-width="5" stroke-linecap="round"/>
+  <path d="M240 374 q-24 18 -44 6 M240 374 q24 18 44 6" fill="none" stroke="#3a332c" stroke-width="5" stroke-linecap="round"/></g>
+  <rect x="18" y="18" width="444" height="524" fill="none" stroke="#7dd3fc" stroke-width="2" opacity=".45"/>
+  <rect x="24" y="24" width="432" height="512" fill="none" stroke="#ef4444" stroke-width="1.5" opacity=".22" transform="translate(3,2)"/>
+  <rect x="0" y="486" width="480" height="74" fill="#000" opacity=".58"/>
+  <text x="28" y="518" font-family="Russo One, Impact, sans-serif" font-size="27" fill="#7dd3fc" letter-spacing="1">ПЛАКСИК</text>
+  <text x="28" y="540" font-family="monospace" font-size="12" fill="#ffffff" opacity=".72" letter-spacing="1.4">МОРСКАЯ СВИНКА</text>
+</svg>

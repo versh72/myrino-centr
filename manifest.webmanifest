@@ -1,0 +1,18 @@
+{
+  "name": "Мурино Центр — станция Меллстройности",
+  "short_name": "Мурино",
+  "description": "Станция Меллстройности: музыка, переводчик в мурино, Атлас сезонов и портал мемов.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0d100e",
+  "theme_color": "#0d100e",
+  "lang": "ru",
+  "dir": "ltr",
+  "categories": ["music", "entertainment"],
+  "icons": [
+    { "src": "img/icon.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "img/icon.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

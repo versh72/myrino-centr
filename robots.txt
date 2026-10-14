@@ -1,0 +1,5 @@
+# Мурино Центр — станция Меллстройности
+User-agent: *
+Allow: /
+
+Sitemap: https://versh72.github.io/myrino-centr/sitemap.xml

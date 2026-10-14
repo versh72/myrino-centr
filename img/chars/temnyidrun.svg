@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 560" width="480" height="560" role="img" aria-label="Тёмный Друн">
+  
+  <defs>
+    <linearGradient id="bgtemnyidrun" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5a3418"/><stop offset="100%" stop-color="#2a1b10"/>
+    </linearGradient>
+    <radialGradient id="glowtemnyidrun" cx="50%" cy="38%" r="55%">
+      <stop offset="0%" stop-color="#fb923c" stop-opacity=".38"/>
+      <stop offset="100%" stop-color="#fb923c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="skintemnyidrun" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fdba74"/><stop offset="100%" stop-color="#fb923c"/>
+    </linearGradient>
+    <filter id="graintemnyidrun">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3"/>
+      <feColorMatrix type="saturate" values="0"/>
+    </filter>
+  </defs>
+  
+  <rect width="480" height="560" fill="url(#bgtemnyidrun)"/>
+  <rect width="480" height="560" fill="url(#glowtemnyidrun)"/>
+  <g opacity=".10" stroke="#fb923c" stroke-width="1">
+    <line x1="0" y1="0" x2="480" y2="0"/><line x1="0" y1="55" x2="480" y2="55"/><line x1="0" y1="110" x2="480" y2="110"/><line x1="0" y1="165" x2="480" y2="165"/><line x1="0" y1="220" x2="480" y2="220"/><line x1="0" y1="275" x2="480" y2="275"/><line x1="0" y1="330" x2="480" y2="330"/><line x1="0" y1="385" x2="480" y2="385"/><line x1="0" y1="440" x2="480" y2="440"/><line x1="0" y1="495" x2="480" y2="495"/><line x1="0" y1="550" x2="480" y2="550"/>
+  </g>
+  <rect width="480" height="560" filter="url(#graintemnyidrun)" opacity=".14" style="mix-blend-mode:overlay"/>
+  <g transform="translate(0,6)">
+  <path d="M120 560 q0 -170 120 -170 q120 0 120 170 z" fill="#0d0b12" stroke="#000" stroke-width="6"/>
+  <path d="M186 372 q54 -46 108 0 l-14 46 q-40 -34 -80 0 z" fill="#171320" stroke="#000" stroke-width="5"/>
+  <ellipse cx="240" cy="300" rx="74" ry="92" fill="#241d2e" stroke="#000" stroke-width="6"/>
+  <path d="M166 282 q74 -80 148 0 q-16 -74 -74 -74 q-58 0 -74 74 z" fill="#100d16" stroke="#000" stroke-width="5"/>
+  <ellipse cx="210" cy="306" rx="24" ry="10" fill="#fb923c" opacity=".9"/>
+   <circle cx="210" cy="306" r="30" fill="#fb923c" opacity=".25"/><ellipse cx="272" cy="306" rx="24" ry="10" fill="#fb923c" opacity=".9"/>
+   <circle cx="272" cy="306" r="30" fill="#fb923c" opacity=".25"/>
+  <path d="M212 352 q28 16 56 0" fill="none" stroke="#fb923c" stroke-width="7" stroke-linecap="round"/>
+  <path d="M164 452 q76 -34 152 0" fill="none" stroke="#fb923c" stroke-width="3" opacity=".5"/></g>
+  <rect x="18" y="18" width="444" height="524" fill="none" stroke="#fb923c" stroke-width="2" opacity=".45"/>
+  <rect x="24" y="24" width="432" height="512" fill="none" stroke="#ef4444" stroke-width="1.5" opacity=".22" transform="translate(3,2)"/>
+  <rect x="0" y="486" width="480" height="74" fill="#000" opacity=".58"/>
+  <text x="28" y="518" font-family="Russo One, Impact, sans-serif" font-size="27" fill="#fb923c" letter-spacing="1">ТЁМНЫЙ ДРУН</text>
+  <text x="28" y="540" font-family="monospace" font-size="12" fill="#ffffff" opacity=".72" letter-spacing="1.4">НАДУТАЯ КУРТКА</text>
+</svg>

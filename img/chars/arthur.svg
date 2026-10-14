@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 560" width="480" height="560" role="img" aria-label="Артур">
+  
+  <defs>
+    <linearGradient id="bgarthur" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#26362b"/><stop offset="100%" stop-color="#131a15"/>
+    </linearGradient>
+    <radialGradient id="glowarthur" cx="50%" cy="38%" r="55%">
+      <stop offset="0%" stop-color="#4ade80" stop-opacity=".38"/>
+      <stop offset="100%" stop-color="#4ade80" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="skinarthur" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#86efac"/><stop offset="100%" stop-color="#4ade80"/>
+    </linearGradient>
+    <filter id="grainarthur">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3"/>
+      <feColorMatrix type="saturate" values="0"/>
+    </filter>
+  </defs>
+  
+  <rect width="480" height="560" fill="url(#bgarthur)"/>
+  <rect width="480" height="560" fill="url(#glowarthur)"/>
+  <g opacity=".10" stroke="#4ade80" stroke-width="1">
+    <line x1="0" y1="0" x2="480" y2="0"/><line x1="0" y1="55" x2="480" y2="55"/><line x1="0" y1="110" x2="480" y2="110"/><line x1="0" y1="165" x2="480" y2="165"/><line x1="0" y1="220" x2="480" y2="220"/><line x1="0" y1="275" x2="480" y2="275"/><line x1="0" y1="330" x2="480" y2="330"/><line x1="0" y1="385" x2="480" y2="385"/><line x1="0" y1="440" x2="480" y2="440"/><line x1="0" y1="495" x2="480" y2="495"/><line x1="0" y1="550" x2="480" y2="550"/>
+  </g>
+  <rect width="480" height="560" filter="url(#grainarthur)" opacity=".14" style="mix-blend-mode:overlay"/>
+  <g transform="translate(0,6)">
+  
+  <ellipse cx="240" cy="334.96" rx="105.60000000000001" ry="73.16" fill="#000" opacity=".30"/>
+  <path d="M144 250
+           Q240 106.03999999999999 336 250
+           Q336 368 240 382.16
+           Q144 368 144 250 Z"
+        fill="url(#skinarthur)" stroke="#0b0b0b" stroke-width="5"/>
+  <path d="M170 168 q70 -74 140 0 z" fill="#12100e" stroke="#000" stroke-width="5"/>
+  <rect x="168" y="150" width="144" height="30" rx="14" fill="#1b1815" stroke="#000" stroke-width="4"/>
+  <line x1="240" y1="150" x2="240" y2="70" stroke="#2b2622" stroke-width="9"/>
+  <ellipse cx="240" cy="62" rx="76" ry="13" fill="none" stroke="#4ade80" stroke-width="7" opacity=".95"/>
+  <ellipse cx="240" cy="62" rx="20" ry="8" fill="#4ade80" opacity=".55"/>
+  <ellipse cx="202" cy="240" rx="24" ry="10" fill="#4ade80" opacity=".9"/>
+   <circle cx="202" cy="240" r="30" fill="#4ade80" opacity=".25"/><ellipse cx="278" cy="240" rx="24" ry="10" fill="#4ade80" opacity=".9"/>
+   <circle cx="278" cy="240" r="30" fill="#4ade80" opacity=".25"/>
+  <path d="M204 306 q36 26 72 0" fill="none" stroke="#101010" stroke-width="9" stroke-linecap="round"/>
+  <path d="M240 270 l0 30" stroke="#101010" stroke-width="6"/></g>
+  <rect x="18" y="18" width="444" height="524" fill="none" stroke="#4ade80" stroke-width="2" opacity=".45"/>
+  <rect x="24" y="24" width="432" height="512" fill="none" stroke="#ef4444" stroke-width="1.5" opacity=".22" transform="translate(3,2)"/>
+  <rect x="0" y="486" width="480" height="74" fill="#000" opacity=".58"/>
+  <text x="28" y="518" font-family="Russo One, Impact, sans-serif" font-size="27" fill="#4ade80" letter-spacing="1">АРТУР</text>
+  <text x="28" y="540" font-family="monospace" font-size="12" fill="#ffffff" opacity=".72" letter-spacing="1.4">КЕПКА-ПРОПЕЛЛЕР</text>
+</svg>

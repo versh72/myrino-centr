@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 560" width="480" height="560" role="img" aria-label="Мытя">
+  
+  <defs>
+    <linearGradient id="bgmyti" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1d4459"/><stop offset="100%" stop-color="#102330"/>
+    </linearGradient>
+    <radialGradient id="glowmyti" cx="50%" cy="38%" r="55%">
+      <stop offset="0%" stop-color="#7dd3fc" stop-opacity=".38"/>
+      <stop offset="100%" stop-color="#7dd3fc" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="skinmyti" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#bae6fd"/><stop offset="100%" stop-color="#7dd3fc"/>
+    </linearGradient>
+    <filter id="grainmyti">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3"/>
+      <feColorMatrix type="saturate" values="0"/>
+    </filter>
+  </defs>
+  
+  <rect width="480" height="560" fill="url(#bgmyti)"/>
+  <rect width="480" height="560" fill="url(#glowmyti)"/>
+  <g opacity=".10" stroke="#7dd3fc" stroke-width="1">
+    <line x1="0" y1="0" x2="480" y2="0"/><line x1="0" y1="55" x2="480" y2="55"/><line x1="0" y1="110" x2="480" y2="110"/><line x1="0" y1="165" x2="480" y2="165"/><line x1="0" y1="220" x2="480" y2="220"/><line x1="0" y1="275" x2="480" y2="275"/><line x1="0" y1="330" x2="480" y2="330"/><line x1="0" y1="385" x2="480" y2="385"/><line x1="0" y1="440" x2="480" y2="440"/><line x1="0" y1="495" x2="480" y2="495"/><line x1="0" y1="550" x2="480" y2="550"/>
+  </g>
+  <rect width="480" height="560" filter="url(#grainmyti)" opacity=".14" style="mix-blend-mode:overlay"/>
+  <g transform="translate(0,6)">
+  <path d="M112 560 q0 -180 128 -180 q128 0 128 180 z" fill="#bae6fd" stroke="#0b0b0b" stroke-width="6" opacity=".95"/>
+  
+  <ellipse cx="240" cy="333.52" rx="101.2" ry="71.92" fill="#000" opacity=".30"/>
+  <path d="M148 250
+           Q240 108.47999999999999 332 250
+           Q332 366 240 379.92
+           Q148 366 148 250 Z"
+        fill="url(#skinmyti)" stroke="#0b0b0b" stroke-width="5"/>
+  <path d="M172 152 q68 -58 136 0 q-18 -66 -68 -66 q-50 0 -68 66 z" fill="#f4f9fc" stroke="#0b0b0b" stroke-width="5"/>
+  <ellipse cx="206" cy="246" rx="13" ry="6" fill="#101010"/><ellipse cx="274" cy="246" rx="13" ry="6" fill="#101010"/>
+  <path d="M204 312 q36 26 72 0" fill="none" stroke="#101010" stroke-width="9" stroke-linecap="round"/>
+  <g fill="#fff" opacity=".8">
+    <circle cx="400" cy="180" r="26"/><circle cx="430" cy="230" r="18"/><circle cx="64" cy="200" r="21"/><circle cx="86" cy="146" r="13"/>
+  </g>
+  <g stroke="#fff" stroke-width="3" opacity=".35" fill="none"><circle cx="240" cy="250" r="150"/></g></g>
+  <rect x="18" y="18" width="444" height="524" fill="none" stroke="#7dd3fc" stroke-width="2" opacity=".45"/>
+  <rect x="24" y="24" width="432" height="512" fill="none" stroke="#ef4444" stroke-width="1.5" opacity=".22" transform="translate(3,2)"/>
+  <rect x="0" y="486" width="480" height="74" fill="#000" opacity=".58"/>
+  <text x="28" y="518" font-family="Russo One, Impact, sans-serif" font-size="27" fill="#7dd3fc" letter-spacing="1">МЫТЯ</text>
+  <text x="28" y="540" font-family="monospace" font-size="12" fill="#ffffff" opacity=".72" letter-spacing="1.4">ЖИТЕЛЬ МЫТИЩ</text>
+</svg>

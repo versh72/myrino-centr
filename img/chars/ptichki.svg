@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 560" width="480" height="560" role="img" aria-label="Птички-бурмалдички">
+  
+  <defs>
+    <linearGradient id="bgptichki" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6b3f1d"/><stop offset="100%" stop-color="#2a1b10"/>
+    </linearGradient>
+    <radialGradient id="glowptichki" cx="50%" cy="38%" r="55%">
+      <stop offset="0%" stop-color="#fb923c" stop-opacity=".38"/>
+      <stop offset="100%" stop-color="#fb923c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="skinptichki" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fed7aa"/><stop offset="100%" stop-color="#fb923c"/>
+    </linearGradient>
+    <filter id="grainptichki">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3"/>
+      <feColorMatrix type="saturate" values="0"/>
+    </filter>
+  </defs>
+  
+  <rect width="480" height="560" fill="url(#bgptichki)"/>
+  <rect width="480" height="560" fill="url(#glowptichki)"/>
+  <g opacity=".10" stroke="#fb923c" stroke-width="1">
+    <line x1="0" y1="0" x2="480" y2="0"/><line x1="0" y1="55" x2="480" y2="55"/><line x1="0" y1="110" x2="480" y2="110"/><line x1="0" y1="165" x2="480" y2="165"/><line x1="0" y1="220" x2="480" y2="220"/><line x1="0" y1="275" x2="480" y2="275"/><line x1="0" y1="330" x2="480" y2="330"/><line x1="0" y1="385" x2="480" y2="385"/><line x1="0" y1="440" x2="480" y2="440"/><line x1="0" y1="495" x2="480" y2="495"/><line x1="0" y1="550" x2="480" y2="550"/>
+  </g>
+  <rect width="480" height="560" filter="url(#grainptichki)" opacity=".14" style="mix-blend-mode:overlay"/>
+  <g transform="translate(0,6)">
+  <ellipse cx="240" cy="360" rx="104" ry="96" fill="#2f6fb5" stroke="#0b0b0b" stroke-width="6"/>
+  <path d="M160 330 q80 -56 160 0 q-20 -110 -80 -110 q-60 0 -80 110 z" fill="#1f5290" stroke="#0b0b0b" stroke-width="5"/>
+  <path d="M330 300 q86 -34 82 22 q-6 50 -86 36 z" fill="#2f6fb5" stroke="#0b0b0b" stroke-width="5"/>
+  <path d="M300 296 q52 -70 44 -140" fill="none" stroke="#1f5290" stroke-width="16" stroke-linecap="round"/>
+  <ellipse cx="240" cy="252" rx="72" ry="80" fill="url(#skinptichki)" stroke="#0b0b0b" stroke-width="5"/>
+  <path d="M178 196 q62 -54 124 0 q-14 -62 -62 -62 q-48 0 -62 62 z" fill="#1a1512" stroke="#000" stroke-width="4"/>
+  <path d="M240 258 l30 22 l-30 22 l-30 -22 z" fill="#f0a830" stroke="#7a4a10" stroke-width="4"/>
+  <ellipse cx="208" cy="238" rx="12" ry="6" fill="#101010"/><ellipse cx="272" cy="238" rx="12" ry="6" fill="#101010"/>
+  <path d="M182 168 q-18 -34 8 -42 q22 8 20 42 z" fill="#f0a830" stroke="#7a4a10" stroke-width="4"/>
+  <path d="M298 168 q18 -34 -8 -42 q-22 8 -20 42 z" fill="#f0a830" stroke="#7a4a10" stroke-width="4"/></g>
+  <rect x="18" y="18" width="444" height="524" fill="none" stroke="#fb923c" stroke-width="2" opacity=".45"/>
+  <rect x="24" y="24" width="432" height="512" fill="none" stroke="#ef4444" stroke-width="1.5" opacity=".22" transform="translate(3,2)"/>
+  <rect x="0" y="486" width="480" height="74" fill="#000" opacity=".58"/>
+  <text x="28" y="518" font-family="Russo One, Impact, sans-serif" font-size="27" fill="#fb923c" letter-spacing="1">ПТИЧКИ-БУРМАЛДИЧКИ</text>
+  <text x="28" y="540" font-family="monospace" font-size="12" fill="#ffffff" opacity=".72" letter-spacing="1.4">ЗВЕРИНЕЦ</text>
+</svg>

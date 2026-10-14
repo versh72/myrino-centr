@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 560" width="480" height="560" role="img" aria-label="Дима Курносов">
+  
+  <defs>
+    <linearGradient id="bgkurnosos" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4a1d5c"/><stop offset="100%" stop-color="#241030"/>
+    </linearGradient>
+    <radialGradient id="glowkurnosos" cx="50%" cy="38%" r="55%">
+      <stop offset="0%" stop-color="#f472b6" stop-opacity=".38"/>
+      <stop offset="100%" stop-color="#f472b6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="skinkurnosos" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c084fc"/><stop offset="100%" stop-color="#f472b6"/>
+    </linearGradient>
+    <filter id="grainkurnosos">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3"/>
+      <feColorMatrix type="saturate" values="0"/>
+    </filter>
+  </defs>
+  
+  <rect width="480" height="560" fill="url(#bgkurnosos)"/>
+  <rect width="480" height="560" fill="url(#glowkurnosos)"/>
+  <g opacity=".10" stroke="#f472b6" stroke-width="1">
+    <line x1="0" y1="0" x2="480" y2="0"/><line x1="0" y1="55" x2="480" y2="55"/><line x1="0" y1="110" x2="480" y2="110"/><line x1="0" y1="165" x2="480" y2="165"/><line x1="0" y1="220" x2="480" y2="220"/><line x1="0" y1="275" x2="480" y2="275"/><line x1="0" y1="330" x2="480" y2="330"/><line x1="0" y1="385" x2="480" y2="385"/><line x1="0" y1="440" x2="480" y2="440"/><line x1="0" y1="495" x2="480" y2="495"/><line x1="0" y1="550" x2="480" y2="550"/>
+  </g>
+  <rect width="480" height="560" filter="url(#grainkurnosos)" opacity=".14" style="mix-blend-mode:overlay"/>
+  <g transform="translate(0,6)">
+  
+  <ellipse cx="240" cy="333.52" rx="101.2" ry="71.92" fill="#000" opacity=".30"/>
+  <path d="M148 250
+           Q240 108.47999999999999 332 250
+           Q332 366 240 379.92
+           Q148 366 148 250 Z"
+        fill="url(#skinkurnosos)" stroke="#0b0b0b" stroke-width="5"/>
+  <path d="M188 150 q52 -50 104 0 z" fill="#2a2030" stroke="#000" stroke-width="5"/>
+  <ellipse cx="206" cy="242" rx="13" ry="6" fill="#101010"/><ellipse cx="274" cy="242" rx="13" ry="6" fill="#101010"/>
+  <path d="M240 252 q-30 4 -34 46 q26 26 68 4 q-4 -46 -34 -50 z" fill="#c084fc" stroke="#101010" stroke-width="5"/>
+  <ellipse cx="240" cy="284" rx="13" ry="9" fill="#101010" opacity=".65"/>
+  <path d="M196 336 q44 18 88 0" fill="none" stroke="#101010" stroke-width="9" stroke-linecap="round"/></g>
+  <rect x="18" y="18" width="444" height="524" fill="none" stroke="#f472b6" stroke-width="2" opacity=".45"/>
+  <rect x="24" y="24" width="432" height="512" fill="none" stroke="#ef4444" stroke-width="1.5" opacity=".22" transform="translate(3,2)"/>
+  <rect x="0" y="486" width="480" height="74" fill="#000" opacity=".58"/>
+  <text x="28" y="518" font-family="Russo One, Impact, sans-serif" font-size="27" fill="#f472b6" letter-spacing="1">ДИМА КУРНОСОВ</text>
+  <text x="28" y="540" font-family="monospace" font-size="12" fill="#ffffff" opacity=".72" letter-spacing="1.4">БОЛЬШОЙ НОС</text>
+</svg>
