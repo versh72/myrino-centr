@@ -1,29 +1,9 @@
 {
-  "count": 0,
-  "uniques": 0,
+  "count": 25,
+  "uniques": 3,
   "periodDays": 14,
-  "updated": "2026-10-14",
+  "updated": "2026-10-19",
   "daily": [
-    {
-      "date": "10-08",
-      "views": 0,
-      "uniques": 0
-    },
-    {
-      "date": "10-09",
-      "views": 0,
-      "uniques": 0
-    },
-    {
-      "date": "10-10",
-      "views": 0,
-      "uniques": 0
-    },
-    {
-      "date": "10-11",
-      "views": 0,
-      "uniques": 0
-    },
     {
       "date": "10-12",
       "views": 0,
@@ -36,6 +16,26 @@
     },
     {
       "date": "10-14",
+      "views": 24,
+      "uniques": 3
+    },
+    {
+      "date": "10-15",
+      "views": 1,
+      "uniques": 1
+    },
+    {
+      "date": "10-16",
+      "views": 0,
+      "uniques": 0
+    },
+    {
+      "date": "10-17",
+      "views": 0,
+      "uniques": 0
+    },
+    {
+      "date": "10-18",
       "views": 0,
       "uniques": 0
     }
