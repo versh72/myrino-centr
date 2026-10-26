@@ -2,40 +2,40 @@
   "count": 25,
   "uniques": 3,
   "periodDays": 14,
-  "updated": "2026-10-19",
+  "updated": "2026-10-26",
   "daily": [
     {
-      "date": "10-12",
+      "date": "10-19",
       "views": 0,
       "uniques": 0
     },
     {
-      "date": "10-13",
+      "date": "10-20",
       "views": 0,
       "uniques": 0
     },
     {
-      "date": "10-14",
-      "views": 24,
-      "uniques": 3
-    },
-    {
-      "date": "10-15",
-      "views": 1,
-      "uniques": 1
-    },
-    {
-      "date": "10-16",
+      "date": "10-21",
       "views": 0,
       "uniques": 0
     },
     {
-      "date": "10-17",
+      "date": "10-22",
       "views": 0,
       "uniques": 0
     },
     {
-      "date": "10-18",
+      "date": "10-23",
+      "views": 0,
+      "uniques": 0
+    },
+    {
+      "date": "10-24",
+      "views": 0,
+      "uniques": 0
+    },
+    {
+      "date": "10-25",
       "views": 0,
       "uniques": 0
     }
