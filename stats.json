@@ -1,41 +1,41 @@
 {
-  "count": 7,
-  "uniques": 1,
+  "count": 0,
+  "uniques": 0,
   "periodDays": 14,
-  "updated": "2026-11-09",
+  "updated": "2026-11-16",
   "daily": [
     {
-      "date": "11-02",
-      "views": 0,
-      "uniques": 0
-    },
-    {
-      "date": "11-03",
-      "views": 0,
-      "uniques": 0
-    },
-    {
-      "date": "11-04",
-      "views": 0,
-      "uniques": 0
-    },
-    {
-      "date": "11-05",
-      "views": 0,
-      "uniques": 0
-    },
-    {
-      "date": "11-06",
-      "views": 0,
-      "uniques": 0
-    },
-    {
-      "date": "11-07",
-      "views": 0,
-      "uniques": 0
-    },
-    {
       "date": "11-08",
+      "views": 0,
+      "uniques": 0
+    },
+    {
+      "date": "11-09",
+      "views": 0,
+      "uniques": 0
+    },
+    {
+      "date": "11-10",
+      "views": 0,
+      "uniques": 0
+    },
+    {
+      "date": "11-11",
+      "views": 0,
+      "uniques": 0
+    },
+    {
+      "date": "11-12",
+      "views": 0,
+      "uniques": 0
+    },
+    {
+      "date": "11-13",
+      "views": 0,
+      "uniques": 0
+    },
+    {
+      "date": "11-14",
       "views": 0,
       "uniques": 0
     }
